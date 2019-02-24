@@ -85,6 +85,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BaseClasses\ViewModelBase.cs" />
+    <Compile Include="Converters\TeamKeyToNameConverter.cs" />
     <Compile Include="DB\Helper.cs" />
     <Compile Include="DB\Property.cs" />
     <Compile Include="Dto\GameDto.cs" />

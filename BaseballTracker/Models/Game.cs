@@ -16,7 +16,7 @@ namespace BaseballTracker.Models
         public int HomeTeamKey { get; set; }
         public int AwayTeamKey { get; set; }
         public string Date { get; set; }
-        public string Winner { get; set; }
+        public int WinnerKey { get; set; }
 
         public Game()
         {

@@ -97,11 +97,11 @@ namespace BaseballTracker.Web
 
                 if (homeScore > awayScore)
                 {
-                    game.Winner = game.Home.Name;
+                    game.WinnerKey = game.HomeTeamKey;
                 }
                 if (homeScore < awayScore)
                 {
-                    game.Winner = game.Away.Name;
+                    game.WinnerKey = game.AwayTeamKey;
                 }
             }
 

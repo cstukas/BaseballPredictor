@@ -28,17 +28,17 @@ namespace BaseballTracker
         //****************************
         public static string GetNameFromKey(int key)
         {
-            return Teams.First(x => x.TeamKey == key).TeamName.ToString();
+            return Teams.FirstOrDefault(x => x.TeamKey == key)?.TeamName.ToString();
         }
 
         public static string GetFullNameFromKey(int key)
         {
-            return Teams.First(x => x.TeamKey == key).FullName.ToString();
+            return Teams.First(x => x.TeamKey == key)?.FullName.ToString();
         }
 
         public static string GetCityFromKey(int key)
         {
-            return Teams.First(x => x.TeamKey == key).City.ToString();
+            return Teams.First(x => x.TeamKey == key)?.City.ToString();
         }
 
         public static int GetKeyFromWebsiteName(string name)

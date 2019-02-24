@@ -26,7 +26,7 @@ namespace BaseballTracker
             TeamList.LoadTeamList();
             var test = TeamList.Teams;
 
-            PullAndInsertGameInfo(0, 0);
+            PullAndInsertGameInfo(-1, 0);
 
             SetDisplayGames();
         }
